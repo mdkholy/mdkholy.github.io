@@ -1,0 +1,22 @@
+# Node modules
+/node_modules
+
+# ignore any log files
+*.log
+
+# IDE stuff
+*.sublime*
+.idea
+
+# generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+# Windows stuff
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

@@ -1,0 +1,18 @@
+{
+  "name": "mdkholy.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mdkholy/mdkholy.github.io",
+  "author": {
+    "name" : "Mohamed Elkholy",
+    "email" : "mmdkholy@gmail.com",
+    "url" : "https://github.com/mdkholy"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "del": "^1.1.1",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-minify-css": "^0.4.6",
+    "gulp-uglify": "^1.1.0",
+    "gulp-concat": "^2.5.2"
+  }
+}
