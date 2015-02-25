@@ -5,36 +5,67 @@ var
   uglify        = require('gulp-uglify'),
   minifycss     = require('gulp-minify-css'),
   path          = require('path'),
-  sourcemaps    = require('gulp-sourcemaps');
+  merge         = require('merge-stream'),
+  sourcemaps    = require('gulp-sourcemaps'),
+  fileinclude   = require('gulp-file-include'),
+  prettify      = require('gulp-jsbeautifier');
 
 var paths = {
+  html: [
+    {
+      src: 'src/html/**.html',
+      dest: './'
+    },
+    {
+      src: 'src/html/portfolio/**.html',
+      dest: './portfolio'
+    }
+  ],
   js: {
     files: [
-      'src/js/plugins.js',
-      'src/js/site.js'
+      'src/assets/js/plugins.js',
+      'src/assets/js/site.js'
     ],
     dest: 'assets/js/app.js'
   },
   css: {
     'files': [
-      'src/css/layers.min.css',
-      'src/css/style.css',
-      'src/css/responsive.css'
+      'src/assets/css/layers.min.css',
+      'src/assets/css/style.css',
+      'src/assets/css/responsive.css'
     ],
     dest: 'assets/css/app.css'
   },
   fonts: {
-    src: 'src/fonts/**.*',
+    src: 'src/assets/fonts/**.*',
     dest: 'assets/fonts'
   },
   images: {
-    src: 'src/img/**/*.*',
+    src: 'src/assets/img/**/*.*',
     dest: 'assets/img'
   }
 };
 
 gulp.task('clean', function (cb) {
   del(['assets'], cb);
+});
+
+gulp.task('build-html', ['clean'], function(){
+  var tasks = paths.html.map(function(file){
+    var g = gulp
+            .src(file.src)
+            .pipe(fileinclude({
+              prefix: '@@',
+              basepath: '@file'
+            }))
+            .pipe(prettify({indentSize: 2}))
+            .pipe(gulp.dest(file.dest))
+        ;
+
+    return g;
+  });
+
+  return merge(tasks);
 });
 
 gulp.task('build-js', ['clean'], function(){
@@ -95,7 +126,8 @@ gulp.task('copy-assets', [
 gulp.task('build', [
   'copy-assets',
   'build-js',
-  'build-css'
+  'build-css',
+  'build-html',
 ]);
 
 gulp.task('default', [
