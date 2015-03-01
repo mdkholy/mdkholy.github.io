@@ -9,7 +9,9 @@ var
   sourcemaps    = require('gulp-sourcemaps'),
   fileinclude   = require('gulp-file-include'),
   autoprefixer  = require('gulp-autoprefixer')
-  prettify      = require('gulp-jsbeautifier');
+  prettify      = require('gulp-jsbeautifier'),
+  imagemin      = require('gulp-imagemin'),
+  pngquant      = require('imagemin-pngquant');
 
 var paths = {
   html: [
@@ -129,6 +131,11 @@ gulp.task('build-css', ['clean-css'], function(){
 
 gulp.task('copy-images', ['clean-images'], function(){
   return gulp.src(paths.images.src)
+    .pipe(imagemin({
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
+      }))
     .pipe(gulp.dest(paths.images.dest));
 });
 
