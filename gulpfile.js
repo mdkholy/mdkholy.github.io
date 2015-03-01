@@ -12,13 +12,15 @@ var
   prettify      = require('gulp-jsbeautifier'),
   imagemin      = require('gulp-imagemin'),
   pngquant      = require('imagemin-pngquant'),
-  mozjpeg       = require('imagemin-mozjpeg');
+  mozjpeg       = require('imagemin-mozjpeg'),
+  webserver     = require('gulp-webserver'),
+  notify        = require("gulp-notify");
 
 var paths = {
   html: [
     {
       src: 'src/html/*.html',
-      dest: './'
+      dest: '.'
     },
     {
       src: 'src/html/portfolio/**/*.html',
@@ -85,7 +87,6 @@ gulp.task('clean-assets', function (cb) {
   del(['assets'], cb);
 });
 
-
 gulp.task('build-html', ['clean-html'], function(){
   var tasks = paths.html.map(function(file){
     var g = gulp
@@ -144,10 +145,7 @@ gulp.task('copy-fonts', ['clean-fonts'], function(){
     .pipe(gulp.dest(paths.fonts.dest));
 });
 
-/**
- * Watch src
- */
-gulp.task('watch', function () {
+gulp.task('watch', ['build'], function () {
   var watchjs =  paths.js.files;
   var watchcss =  paths.css.files;
   var watchhtml = paths.html.map(function(file){
@@ -178,6 +176,20 @@ gulp.task('watch', function () {
   gulp.watch([paths.images.src], ['copy-images']);
 });
 
+gulp.task('serve', ['watch'], function() {
+  gulp.src('./')
+      .pipe(webserver({
+        open: true
+      }))
+      .pipe(notify({
+        "title": "Gulp",
+        "message": "Server started at localhost:8000",
+        "sound": "Frog",
+        "icon": path.join(__dirname, "src/assets/img/apple-touch-icon-120x120.png"), // case sensitive
+        "onLast": true
+      }));;
+});
+
 gulp.task('copy-assets', [
   'copy-images',
   'copy-fonts'
@@ -197,5 +209,6 @@ gulp.task('clean', [
 
 gulp.task('default', [
   'build',
-  'watch'
+  'watch',
+  'serve'
 ]);
