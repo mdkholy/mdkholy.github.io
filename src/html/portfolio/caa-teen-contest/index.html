@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    @@include('../../partials/head.html', {
+      "title": "CAA Eco-Driving Contest - Portfolio",
+      "base": "../.."
+    })
+	</head>
+
+	<body class="single single-portfolio">
+
+    @@include('../../partials/header.html', {
+      "currentPage": "portfolio",
+      "base": "../.."
+    })
+
+		<main role="main">
+
+      <div id="intro-wrap" data-height="22">
+        <div id="intro" class="preload darken">
+          <div class="intro-item" style="background-image: url(../../assets/img/slider/clouds-3.jpg);">
+            <div class="caption">
+              <h2>Portfolio</h2>
+            </div><!-- caption -->
+          </div>
+        </div><!-- intro -->
+      </div><!-- intro-wrap -->
+
+      <div id="main">
+
+        <section class="row section wide greyish">
+          <div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+            <div id="post-nav">
+              <ul class="clear-after reset plain">
+                <li id="prev-items" class="post-nav"><a href="../naiop"><i class="fa fa-chevron-left"></i><span class="label hidden-mobile">Prev</span></a></li>
+                <li id="all-items" class="post-nav"><a href="../"><i class="fa fa-th-large"></i></a></li>
+                <li id="next-items" class="post-nav"><a href="../pearls-of-motherhood"><span class="label hidden-mobile">Next</span><i class="fa fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="post-area buffer-top clear-after">
+              <article role="main" class="column eight">
+                <h5 class="meta-post clear-after"></h5>
+                <h1>CAA Eco-Driving Contest</h1>
+                <div class="gallery slider dark-controls" data-autoplay="true" data-autoheight="true">
+                  <figure>
+                    <div><img src="../../assets/img/portfolio/caa-teen-contest/desktop-01.jpg" alt=""></div>
+                    <div><img src="../../assets/img/portfolio/caa-teen-contest/desktop-02.jpg" alt=""></div>
+                    <div><img src="../../assets/img/portfolio/caa-teen-contest/desktop-03.jpg" alt=""></div>
+                    <div><img src="../../assets/img/portfolio/caa-teen-contest/desktop-04.jpg" alt=""></div>
+                  </figure>
+                </div><!-- gallery -->
+
+                <p><i>Note: This project was done while working at Dimentians Ltd.</i></p>
+
+                <h2>About the client</h2>
+                <p>The Canadian Automobile Association (CAA) is one of the largest consumer-based organizations in Canada. They help provide freedom and peace of mind to 6 million Members through 9 automobile Clubs and over 140 offices located across the country.</p>
+
+                <h2>Project Description</h2>
+                <p>The purpose of the Teen Eco Drive Video contest is to encourage teens to share their Eco Driving Pledge in a creative way, utilizing the mini video platforms, Instagram and Vine. Participation in the contest is done by creating a mini video on Instagram or Vine and then sharing it using the contest hashtag (eg. #CAAEcoDrive).</p>
+                <p>The contest system has a video collector component which continously searches the mentioned video platforms for videos matching the contest hashtag and saves them from further processing and approval. Once a video is approved, it is diplayed on the contest video gallary and the video author is notified via a comment on his video page (either on Instagram or Vine).</p>
+                <p>Once the contest is over, CAA selects 3 winning videos based on some factors, amongst them is the number of user votes per video.</p>
+                <p>I was the lead developer of this project who was responsible for the development of the contest system backend as well as the frontend. The backend was developed using CakePHP Framework, Instagram, Vine and Twitter APIs. The frontend was developed using HTML5, CSS3 and jQuery based on the contest UI designs I received from our web designer.</p>
+              </article>
+
+              <aside role="complementary" class="sidebar column four last">
+                <div class="widget portfolio-widget">
+                  <h4>Client</h4>
+                  <p>CAA</p>
+                </div>
+                <div class="widget portfolio-widget">
+                  <h4>Technologies</h4>
+                  <p>Web App <br/>CakePHP <br/> Twitter, Instagram and Vine APIs <br/>Instagram API</p>
+                </div>
+                <a href="http://teencontest.caa.ca/" target="_blank" class="button transparent">View Project</a>
+                <div class="widget portfolio-widget portfolio-widget-quote">
+                  <div class="quote">
+                    <p><i class="fa fa-quote-left"></i> Mohamed is a talented developer that always takes the extra step to provide insightful suggestions to make any project that we work on together more efficient. He is easy going and a pleasure to work with.</p>
+                    <div class="author">
+                      <img src="../../assets/img/persons/susheila-li.png" alt="">
+                      <cite>Susheila Li <br> Project Manager, Dimentians Ltd.</cite>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+
+            </div><!-- post-area -->
+
+          </div><!-- row-content -->
+        </section>
+
+        <section class="row section call-to-action">
+          <div class="row-content buffer even">
+            <p>Let’s discuss whether I’m a good fit for your project.</p>
+            <a class="button red" href="#">Get in touch</a>
+          </div>
+        </section>
+
+      </div>
+		</main><!-- main -->
+
+    @@include('../../partials/footer.html', {
+      "base": "../.."
+    })
+
+	</body>
+</html>

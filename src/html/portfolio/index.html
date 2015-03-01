@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    @@include('../partials/head.html', {
+      "title": "Portfolio",
+      "base": ".."
+    })
+	</head>
+
+	<body class="portfolio">
+
+    @@include('../partials/header.html', {
+      "currentPage": "portfolio",
+      "base": ".."
+    })
+
+		<main role="main">
+			<div id="intro-wrap" data-height="22">
+				<div id="intro" class="preload darken">
+					<div class="intro-item" style="background-image: url(../assets/img/slider/clouds-3.jpg);">
+						<div class="caption">
+							<h2>Portfolio</h2>
+						</div><!-- caption -->
+					</div>
+				</div><!-- intro -->
+			</div><!-- intro-wrap -->
+
+      <div id="main" class="row">
+        <section class="row section wide greyish">
+          <div class="row-content buffer even clear-after">
+            <div class="grid-items portfolio-section">
+              <article class="item column six reset">
+                <figure><img src="../assets/img/portfolio/glen-echo-cheese-kiosk/thumb.png" alt=""></figure>
+                <a class="item-caption">
+                  <h3>Glen Echo Cheese Kiosk</h3>
+                  <div class="text-xs">Web App / Wordpress</div>
+                </a>
+                <a class="overlay" href="glen-echo-cheese-kiosk"></a><!-- overlay -->
+              </article>
+              <article class="item column six reset last">
+                <figure><img src="../assets/img/portfolio/innovation-factory/thumb.png" alt=""></figure>
+                <a class="item-caption">
+                  <h3>Innovation Factory</h3>
+                  <div class="text-xs">Corporate / Wordpress</div>
+                </a>
+                <a class="overlay" href="innovation-factory"></a><!-- overlay -->
+              </article>
+              <article class="item column six reset">
+                <figure><img src="../assets/img/portfolio/naiop/thumb.png" alt=""></figure>
+                <a class="item-caption">
+                  <h3>NAIOP Sustainability</h3>
+                  <div class="text-xs">Corporate / Wordpress</div>
+                </a>
+                <a class="overlay" href="naiop"></a><!-- overlay -->
+              </article>
+              <article class="item column six reset last">
+                <figure><img src="../assets/img/portfolio/caa-teen-contest/thumb.png" alt=""></figure>
+                <a class="item-caption">
+                  <h3>CAA Eco-Driving Contest</h3>
+                  <div class="text-xs">Web App / CakePHP</div>
+                </a>
+                <a class="overlay" href="caa-teen-contest"></a><!-- overlay -->
+              </article>
+              <article class="item column six reset">
+                <figure><img src="../assets/img/portfolio/pearls-of-motherhood/thumb.png" alt=""></figure>
+                <a class="item-caption">
+                  <h3>Pearls of Motherhood</h3>
+                  <div class="text-xs">Blog / Wordpress</div>
+                </a>
+                <a class="overlay" href="pearls-of-motherhood"></a><!-- overlay -->
+              </article>
+            </div><!-- grid-items -->
+          </div><!-- row-content -->
+        </section>
+
+        <section class="row section call-to-action">
+          <div class="row-content buffer even">
+            <p>Let’s discuss whether I’m a good fit for your project.</p>
+            <a class="button red" href="#">Get in touch</a>
+          </div>
+        </section>
+
+      </div>
+		</main><!-- main -->
+
+    @@include('../partials/footer.html', {
+      "base": ".."
+    })
+
+	</body>
+</html>

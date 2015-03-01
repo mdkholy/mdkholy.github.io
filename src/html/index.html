@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    @@include('partials/head.html')
+    @@include('partials/head.html', {
+      "title": "Home",
+      "base": "."
+    })
 	</head>
 
 	<body class="page">
 
-    @@include('partials/header.html')
+    @@include('partials/header.html', {
+      "currentPage": "home",
+      "base": "."
+    })
 
 		<main role="main">
 			<div id="intro-wrap">
-				<div id="intro" class="preload darken more-button">					
+				<div id="intro" class="preload darken more-button">
 					<div class="intro-item" style="background-image: url(assets/img/slider/margot-pandone.jpg);">
 						<div class="caption">
 							<h2>Hi. I'm Mohamed.</h2>
 							<p>I <i>passionately</i> move pixels and lines of code to craft clean, responsive, and user-friendly web sites and applications.</p>
 							<div class="widget meta-social">
 								<ul class="inline">
-									<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href="#" class="github-share border-box"><i class="fa fa-github fa-lg"></i></a></li>
-									<li><a href="#" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									<li><a href="#" class="gplus-share border-box"><i class="fa fa-envelope fa-lg"></i></a></li>
+									<li><a href="https://twitter.com/mdkholy" target="_blank" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://github.com/mdkholy" target="_blank" class="github-share border-box"><i class="fa fa-github fa-lg"></i></a></li>
+                  <li><a href="skype:mdkholy?chat" class="skype-share border-box"><i class="fa fa-skype fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/mdkholy" target="_blank" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#100;&#107;&#104;&#111;&#108;&#121;&#046;&#109;&#101;" target="_blank" class="gplus-share border-box"><i class="fa fa-envelope fa-lg"></i></a></li>
 								</ul>
-							</div>	
-						</div><!-- caption -->				
+							</div>
+						</div><!-- caption -->
 					</div>
 				</div><!-- intro -->
 			</div><!-- intro-wrap -->
@@ -33,56 +40,58 @@
 				<section class="row section call-to-action">
 					<div class="row-content buffer even">
 						<p>Let’s discuss whether I’m a good fit for your project.</p>
-						<a class="button red" href="#">Get in touch</a>
+						<a class="button red" href="contact">Get in touch</a>
 					</div>
 				</section>
 
-				<section class="row section">
-					<div class="row-content buffer even clear-after">
+				<section class="row section wide greyish">
+					<div class="row-content buffer even animation clear-after">
 						<div class="section-title"><h3>What I do</h3></div>
-						<div class="section-subtitle">I offer my services as a coder for hire to work with individuals, businesses, agencies, designers and other freelancers for web projects, either as a front-end and / or backend developer or web consultant.</div>
-						<div class="column six">
-							<div class="small-icon dark-grey"><i class="fa fa-html5"></i></div>
-							<div class="small-icon-text clear-after">
-								<h4>Web Development</h4>
-								<p class="text-m">I will bring your website to life and make it perform. From simple HTML to complex web applications.I use the latest web technologies to ensure your website is future-friendly and supported by all major browsers today.</p>
-							</div>
-						</div>
-						<div class="column six last">
-							<div class="small-icon dark-grey"><i class="fa fa-rocket"></i></div>
-							<div class="small-icon-text clear-after">
-								<h4>Enterprise-Level Applications</h4>
-								<p class="text-m">I build robust, secure, test-driven web applications custom-tailored to your budget, objectives, and value proposition. My prefered toolkit for building new web applications is the PHP Symfony framework, AngularJS, HTML5 and CSS3.</p>
-							</div>
-						</div>
-						<div class="column six">
-							<div class="small-icon dark-grey"><i class="fa fa-wordpress"></i></div>
-							<div class="small-icon-text clear-after">
-								<h4>WordPress Development</h4>
-								<p class="text-m">These days, I primarily work with WordPress, the ever-popular Content Management System (CMS) where I build custom and complicated applications very easily with its powerful API. I also provide Wordpress customization, custom theme and plugin development services.</p>
-							</div>
-						</div>
-						<div class="column six last">
-							<div class="small-icon dark-grey"><i class="fa fa-shopping-cart"></i></div>
-							<div class="small-icon-text clear-after">
-								<h4>E-commerce solutions</h4>
-								<p class="text-m">Online stores number is growing every day. Online shopping is simple and convenient, and starting a business in this field can be much easier and handy. I provide custom e-commerce solutions, most of them based on open-source platforms, like Magento and WooCommerce.</p>
-							</div>
-						</div>
-						<div class="column six">
-							<div class="small-icon dark-grey"><i class="fa fa-cloud-download"></i></div>
-							<div class="small-icon-text clear-after">
-								<h4>Web services and APIs</h4>
-								<p class="text-m">I build systems that integrate and offer data via clean APIs. I have created extensive integrations with WordPress (such as custom authentication and Twitter Tools), Facebook and other Open Source applications.</p>
-							</div>
-						</div>
-						<div class="column six last">
-							<div class="small-icon dark-grey"><i class="fa fa-tablet"></i></div>
-							<div class="small-icon-text clear-after">
-								<h4>Responsive Web Design</h4>
-								<p class="text-m">Smart phones are getting really popular. If you own a business, service or web store, mobile compatible websites are a must. I can help you with that. This way you’ll be able to offer your iPhone, iPad or Android fans the same quality web experience.</p>
-							</div>
-						</div>
+						<div class="section-subtitle text-l">I offer my services as a front-end/backend developer or web consultant for hire to work with individuals, businesses, agencies, designers and other freelancers for web projects.</div>
+						<div class="service-boxes">
+              <div id="service-box-1" class="service-box column six buffer even reset centertxt">
+                <div class="big-icon dark-grey"><i class="fa fa-html5"></i></div>
+                <div class="big-icon-text clear-after">
+                  <h4>Web Development</h4>
+                  <p class="text-m">I will bring your website to life and make it perform. From simple HTML to complex web applications.I use the latest web technologies to ensure your website is future-friendly and supported by all major browsers today.</p>
+                </div>
+              </div>
+              <div id="service-box-2" class="service-box column six buffer even reset last centertxt">
+                <div class="big-icon dark-grey"><i class="fa fa-rocket"></i></div>
+                <div class="big-icon-text clear-after">
+                  <h4>Enterprise-Level Applications</h4>
+                  <p class="text-m">I build robust, secure, test-driven web applications custom-tailored to your budget, objectives, and value proposition. My prefered toolkit for building new web applications is the PHP Symfony framework, AngularJS, HTML5 and CSS3.</p>
+                </div>
+              </div>
+              <div id="service-box-3" class="service-box column six buffer even reset centertxt">
+                <div class="big-icon dark-grey"><i class="fa fa-wordpress"></i></div>
+                <div class="big-icon-text clear-after">
+                  <h4>WordPress Development</h4>
+                  <p class="text-m">These days, I primarily work with WordPress, the ever-popular Content Management System (CMS) where I build custom and complicated applications very easily with its powerful API. I also provide Wordpress customization, custom theme and plugin development services.</p>
+                </div>
+              </div>
+              <div id="service-box-4" class="service-box column six buffer even reset last centertxt">
+                <div class="big-icon dark-grey"><i class="fa fa-shopping-cart"></i></div>
+                <div class="big-icon-text clear-after">
+                  <h4>E-commerce Solutions</h4>
+                  <p class="text-m">Online stores number is growing every day. Online shopping is simple and convenient, and starting a business in this field can be much easier and handy. I provide custom e-commerce solutions, most of them based on open-source platforms, like Magento and WooCommerce.</p>
+                </div>
+              </div>
+              <div id="service-box-5" class="service-box column six buffer even reset centertxt">
+                <div class="big-icon dark-grey"><i class="fa fa-cloud-download"></i></div>
+                <div class="big-icon-text clear-after">
+                  <h4>Web services and APIs</h4>
+                  <p class="text-m">I build systems that integrate and offer data via clean APIs. I have created extensive integrations with WordPress (such as custom authentication and Twitter Tools), Facebook and other Open Source applications.</p>
+                </div>
+              </div>
+              <div id="service-box-6" class="service-box column six buffer even reset last centertxt">
+                <div class="big-icon dark-grey"><i class="fa fa-tablet"></i></div>
+                <div class="big-icon-text clear-after">
+                  <h4>Responsive Web Design</h4>
+                  <p class="text-m">Smart phones are getting really popular. If you own a business, service or web store, mobile compatible websites are a must. I can help you with that. This way you’ll be able to offer your iPhone, iPad or Android fans the same quality web experience.</p>
+                </div>
+              </div>
+            </div>
 					</div>
 				</section>
 
@@ -92,19 +101,20 @@
             <div class="side-mockup left-mockup animation">
               <div class="slider ipad-slider black" data-autoplay="3000">
                 <figure>
-                  <div><img src="assets/img/work/cheesedb/ipad-01.jpg" alt=""></div>
-                  <div><img src="assets/img/work/cheesedb/ipad-02.jpg" alt=""></div>
-                  <div><img src="assets/img/work/cheesedb/ipad-03.jpg" alt=""></div>
-                  <div><img src="assets/img/work/cheesedb/ipad-04.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/glen-echo-cheese-kiosk/ipad-01.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/glen-echo-cheese-kiosk/ipad-02.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/glen-echo-cheese-kiosk/ipad-03.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/glen-echo-cheese-kiosk/ipad-04.jpg" alt=""></div>
                 </figure>
               </div>
             </div>
             <div class="column six push-six last-special">
+              <div class="section-title"><h3>What I do</h3></div>
               <h2>Glen Echo Cheese Kiosk</h2>
-              <h5 class="meta-post">Web App / WordPress development</h5>
+              <h5 class="meta-post">Web App / WordPress</h5>
               <p>The Glen Echo Cheese Kiosk "Discover A New Cheese" is a web app, custom designed and built to run on iPad and iPod Touch. The devices are being displayed in supermarkets throughout Canada and set up as interactive kiosks. Users are able to interact with the website in order to learn more about featured cheeses and sign up for the Glen Echo newsletter for future updates.</p>
-              <a class="button transparent white" href="#">Read More</a>
-              <a class="button white" href="#">Browse Portfolio</a>
+              <a class="button transparent white" href="portfolio/glen-echo-cheese-kiosk">Read More</a>
+              <a class="button white" href="portfolio">Browse Portfolio</a>
             </div>
 					</div>
 				</section>
@@ -114,79 +124,92 @@
             <div class="side-mockup right-mockup animation">
               <div class="slider desktop-slider" data-autoplay="3000">
                 <figure>
-                  <div><img src="assets/img/work/innovationfactory/desktop-01.jpg" alt=""></div>
-                  <div><img src="assets/img/work/innovationfactory/desktop-02.jpg" alt=""></div>
-                  <div><img src="assets/img/work/innovationfactory/desktop-03.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/innovation-factory/desktop-01.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/innovation-factory/desktop-02.jpg" alt=""></div>
+                  <div><img src="assets/img/portfolio/innovation-factory/desktop-03.jpg" alt=""></div>
                 </figure>
               </div>
             </div>
             <div class="column six">
               <h2>Innovation Factory</h2>
-              <h5 class="meta-post">Corporate / Wordpress development / Genesis Framework</h5>
+              <h5 class="meta-post">Corporate / Wordpress / Genesis Framework</h5>
               <p>My main role in producing Innovation Factory's public website was to take the designs mockups provided by their designer and turn them into a fully functional/responsive WordPress site.</p>
-              <a class="button transparent" href="#">Read More</a>
-              <a class="button" href="#">Browse Portfolio</a>
+              <a class="button transparent" href="portfolio/innovation-factory">Read More</a>
+              <a class="button" href="portfolio">Browse Portfolio</a>
             </div>
           </div>
         </section>
 
         <section class="row section text-light" style="background-color:#FC6E51;">
-					<div class="row-content buffer even clear-after">
+					<div class="row-content buffer even animation clear-after">
             <div class="section-title"><h3>Testimonials</h3></div>
-						<div class="testimonial-slider centertxt" data-autoplay="5000" data-pagination="true" data-transition="fade" data-autoheight="false">
-							<div class="quote">
-								<p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."</p>
+						<div class="testimonial-slider centertxt" data-autoplay="3000" data-pagination="true" data-transition="fade" data-autoheight="false">
+              <div class="quote">
+                <p><i class="fa fa-quote-left"></i> I liked working with Mohamed because he is a real professional. Not only does he deliver excellent work on time, he looked a bit further to understand what we needed and did everything needed to make it easy for us. Highly recommended!</p>
                 <div class="author">
-                  <img src="http://placehold.it/60x60/ddd/fff&amp;text=Beetle%20image" alt="" />
-                  <cite>B.B. King <br /> CEO, Dimentians Ltd.</cite>
+                  <img src="assets/img/persons/han-gerrits.png" alt="">
+                  <cite>Han Gerrits <br> CEO, Innovation Factory</cite>
                 </div>
-							</div><!-- quote -->
-							<div class="quote">
-								<p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.."</p>
+              </div><!-- quote -->
+              <div class="quote">
+                <p><i class="fa fa-quote-left"></i> It is a pleasure to work with Mohamed. He is good at understanding what you really need and communicates perfectly. In short: Mohamed delivers quality maintable solutions (nothing quick-and-dirty).</p>
                 <div class="author">
-                  <img src="http://placehold.it/60x60/ddd/fff&amp;text=Beetle%20image" alt="" />
-                  <cite>B.B. King <br /> CEO, Dimentians Ltd.</cite>
+                  <img src="assets/img/persons/gyuri-van-de-bilt.png" alt="">
+                  <cite>Gyuri van de Bilt <br> CEO, Jobport</cite>
                 </div>
-							</div><!-- quote -->		
-							<div class="quote">
-								<p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."</p>
-								<div class="author">
-                  <img src="http://placehold.it/60x60/ddd/fff&amp;text=Beetle%20image" alt="" />
-                  <cite>B.B. King <br /> CEO, Dimentians Ltd.</cite>
+              </div><!-- quote -->
+              <div class="quote">
+                <p><i class="fa fa-quote-left"></i> Mohamed is a talented developer that always takes the extra step to provide insightful suggestions to make any project that we work on together more efficient. He is easy going and a pleasure to work with.</p>
+                <div class="author">
+                  <img src="assets/img/persons/susheila-li.png" alt="">
+                  <cite>Susheila Li <br> Project Manager, Dimentians Ltd.</cite>
                 </div>
-							</div><!-- quote -->							
-						</div><!-- testimonial-slider -->				
+              </div><!-- quote -->
+              <div class="quote">
+                <p><i class="fa fa-quote-left"></i> It was a pleasure to work with Mohamed. He was professional, fast, and very responsive. He understood exactly my requirements and completed the job with ease. He kept me up-to-date throughout the process and dealt with all my requests straightaway. He designed a brilliant website for me. I recommend him wholeheartedly.</p>
+                <div class="author">
+                  <img src="assets/img/persons/blank.png" alt="">
+                  <cite>Gabriella Ignácz <br> Founder, Pearls of Motherhood</cite>
+                </div>
+              </div><!-- quote -->
+						</div><!-- testimonial-slider -->
+            <div class="more-btn"><a class="button transparent white" href="testimonials">Explore Testimonials</a></div>
 					</div>
 				</section>
 
-        <section class="row section">
-          <div class="row-content buffer even clear-after animation">
+        <section class="row section wide">
+          <div class="row-content buffer even animation clear-after">
             <div class="section-title"><h3>Clients</h3></div>
             <div class="client-logos">
-                <img src="http://placehold.it/200x150/ddd/fff&amp;text=Beetle%20image" alt="" />
-                <img src="http://placehold.it/200x150/ddd/fff&amp;text=Beetle%20image" alt="" />
-                <img src="http://placehold.it/200x150/ddd/fff&amp;text=Beetle%20image" alt="" />
-                <img src="http://placehold.it/200x150/ddd/fff&amp;text=Beetle%20image" alt="" />
+              <img src="assets/img/clients/innovation-factory.png" alt="" />
+              <img src="assets/img/clients/naiop.png" alt="" />
+              <img src="assets/img/clients/dimentians.png" alt="" />
+              <img src="assets/img/clients/targetinternet-old.png" alt="" />
+              <img src="assets/img/clients/triec.png" alt="" />
+              <img src="assets/img/clients/glen-echo.png" alt="" />
+              <img src="assets/img/clients/caa.png" alt="" />
             </div>
 
           </div>
         </section>
 
         <section class="row section call-to-action">
-					<div class="row-content buffer even animation">
-						<p>Have you fallen in love with Beetle?</p>
-						<a class="button red" href="#">Buy it now!</a>
-					</div>
-				</section>								
+          <div class="row-content buffer even animation">
+            <p>Let’s discuss whether I’m a good fit for your project.</p>
+            <a class="button red" href="contact">Get in touch</a>
+          </div>
+        </section>
 
 				<section class="row section">
-					<div class="map" data-maplat="30.0599153" data-maplon="31.2620199" data-mapzoom="6" data-color="aqua" data-height="22.222" data-img="assets/img/marker.png" data-info="I am based in Cairo, EG"></div>
-				</section>									
+					<div id="map"></div>
+				</section>
 
 			</div><!-- id-main -->
 		</main><!-- main -->
 
-    @@include('partials/footer.html')
+    @@include('partials/footer.html', {
+      "base": "."
+    })
 
 	</body>
 </html>
