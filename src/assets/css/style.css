@@ -2974,6 +2974,11 @@ footer a:hover {
     color: #fff;
 }
 
+footer .meta-social ul {
+  margin-top: 0;
+  margin-bottom: 5em;
+}
+
 footer .meta-social ul li a {
     border-color: #545766;
     color: #545766;
@@ -2983,11 +2988,7 @@ footer .meta-social ul li a:hover {
     color: #fff;
 }
 
-#top-footer h4 {
-    margin-top: 1.34em;
-}
-
-#top-footer .widget {
+footer .widget {
     margin-bottom: 0;
 }
 
@@ -2996,13 +2997,10 @@ footer .row-content.buffer {
     padding-bottom: 0;
 }
 
-#bottom-footer {
-    font-size: 0.766em;
-}
-
 ul.flat {
   list-style-type: none;
   text-align: center;
+  padding: 0;
 }
 
 ul.flat li {
@@ -3025,12 +3023,11 @@ footer .widget.made-with-love {
 
 footer .widget.made-with-love {
   letter-spacing: 0.5em;
+  margin-bottom: 4em;
 }
 
 .widget.made-with-love > i {
   color: red;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
 }
 
 /*----------------------------------------------------------------
