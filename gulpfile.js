@@ -10,6 +10,7 @@ var
   fileinclude   = require('gulp-file-include'),
   autoprefixer  = require('gulp-autoprefixer')
   prettify      = require('gulp-jsbeautifier'),
+  minifyHTML    = require('gulp-minify-html'),
   imagemin      = require('gulp-imagemin'),
   pngquant      = require('imagemin-pngquant'),
   mozjpeg       = require('imagemin-mozjpeg'),
@@ -45,7 +46,8 @@ var paths = {
   },
   css: {
     'files': [
-      'src/assets/css/layers.min.css',
+      'src/assets/css/layers.css',
+      'src/assets/css/gfonts.css',
       'src/assets/css/style.css',
       'src/assets/css/responsive.css'
     ],
@@ -95,7 +97,8 @@ gulp.task('build-html', ['clean-html'], function(){
               prefix: '@@',
               basepath: '@file'
             }))
-            .pipe(prettify({indentSize: 2}))
+            //.pipe(prettify({indentSize: 2}))
+            .pipe(minifyHTML())
             .pipe(gulp.dest(file.dest))
         ;
 
