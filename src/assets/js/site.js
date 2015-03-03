@@ -922,6 +922,9 @@ jQuery(document).ready(function ($) {
         },
         success: function(data, textStatus, xhr){
           $successEl.fadeIn();
+          $form.find('.name').val("");
+          $form.find('.email').val("");
+          $form.find('.message').val("");
         },
         complete: function(xhr, textStatus){
           $btn.val('Send a Message');
