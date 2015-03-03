@@ -23,8 +23,6 @@ jQuery(document).ready(function ($) {
         testimonial = $('.testimonial-slider'),
         cCarousel = $('.custom-carousel'),
         loaderIntro = '<div class="landing landing-slider"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>',
-        loader = '<div class="landing landing-els"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>',
-        loaderLightbox = '<div class="landing landing-els lightbox"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>',
         darkover = '<div class="darkover"></div>',
         moreBtnIcon = '<div class="more"><a href="#main"><i class="fa fa-chevron-down"></i></a></div>';
 
@@ -172,11 +170,9 @@ jQuery(document).ready(function ($) {
     }
 
     if (pxContainer.length) {
-
         initIntro();
         introHeight();
         $(window).resize(introHeight);
-
     }
 
     if($('#service-box-1').length){
@@ -468,8 +464,9 @@ jQuery(document).ready(function ($) {
     }
 
 
-    /* Overlay content absolute centering */
 
+/*
+    // Overlay content absolute centering
     function centerOverlay() {
 
         var PortfolioOverlay = $('.overlay-content'),
@@ -539,9 +536,7 @@ jQuery(document).ready(function ($) {
     $(window).on('load', centerOverlay);
     $(window).on('resize', centerOverlay);
 
-
-    /* fix Blog Excerpt Heights */
-
+    // fix Blog Excerpt Heights
     var blogExcerpt = $('.item.column.three .blog-excerpt');
 
     function fixBlogH() {
@@ -578,8 +573,7 @@ jQuery(document).ready(function ($) {
 
     }
 
-    /* Timeline's circle color */
-
+    // Timeline's circle color
     var timeline = $('.timeline'),
         circle = timeline.find('.circle');
 
@@ -595,11 +589,9 @@ jQuery(document).ready(function ($) {
         });
 
     }
-
+*/
     /* Testimonial Carousel */
-
     function initTestimonial() {
-
         testimonial.each(function () {
 
             var $this = $(this),
@@ -626,14 +618,11 @@ jQuery(document).ready(function ($) {
     }
 
     if (testimonial.length) {
-
         initTestimonial();
-
     }
 
 
     /* Custom Carousel */
-
     function initCCarousel() {
 
         cCarousel.each(function () {
@@ -658,20 +647,15 @@ jQuery(document).ready(function ($) {
             });
 
         });
-
     }
 
     if (cCarousel.length) {
-
         initCCarousel();
-
     }
 
 
     /* onScreen Animations */
-
     var onScreenAnims = $('.animation');
-
     if (onScreenAnims.length) {
 
         onScreenAnims.onScreen({
@@ -680,14 +664,11 @@ jQuery(document).ready(function ($) {
                 $(this).addClass('onscreen')
             }
         });
-
     }
 
 
     /* Return the right mockup according to the class & initialize sliders */
-
     var findDevice = $('.slider');
-
     function useMockup() {
 
         findDevice.each(function () {
@@ -789,7 +770,6 @@ jQuery(document).ready(function ($) {
 
 
         });
-
     }
 
     if ((findDevice.length) && (!findDevice.hasClass('gallery'))) {
@@ -810,14 +790,11 @@ jQuery(document).ready(function ($) {
 
         fixArrowPos();
         $(window).resize(fixArrowPos);
-
     }
 
 
     /* Side mockups fixes */
-
     var sideMockup = $('.side-mockup');
-
     function sideMockups() {
 
         sideMockup.each(function () {
@@ -867,24 +844,17 @@ jQuery(document).ready(function ($) {
             }
 
         });
-
     }
 
-
     if (sideMockup.length) {
-
         sideMockups();
         $(window).resize(sideMockups);
-
     }
 
 
     /* Initialize Gallery Sliders */
-
     var galleryslidercontainer = $('.gallery.slider');
-
     function gallerySlider() {
-
         galleryslidercontainer.each(function () {
 
             var $this = $(this),
@@ -913,100 +883,31 @@ jQuery(document).ready(function ($) {
             $this.fadeIn('slow');
 
         });
-
     }
 
     if (galleryslidercontainer.length) {
-
         gallerySlider();
-
-    }
-
-
-    /* Create unique data-lightbox attributes http://stackoverflow.com/questions/11044876/how-to-auto-generate-id-for-child-div-in-jquery */
-
-    var lightboxContainer = $('.lightbox');
-
-    if (lightboxContainer.length) {
-
-        var $this = lightboxContainer;
-
-        for (var i = 0; i < $this.length; i++) {
-
-            $($this[i]).find('.item a').attr("data-lightbox", "gallery-" + i);
-
-        }
-
-        lightboxContainer.each(function () {
-
-            var $this = $(this);
-
-            var activityIndicatorOn = function () {
-                $(loaderLightbox).appendTo('body');
-            },
-                activityIndicatorOff = function () {
-                    $('.landing-els').remove();
-                },
-                overlayOn = function () {
-                    $('<div id="imagelightbox-overlay"></div>').appendTo('body');
-                },
-                overlayOff = function () {
-                    $('#imagelightbox-overlay').remove();
-                },
-                closeButtonOn = function (instance) {
-                    $('<a href="#" id="imagelightbox-close"><i class="icon icon-close"></i></a>').appendTo('body').on('click', function () {
-                        $(this).remove();
-                        instance.quitImageLightbox();
-                        return false;
-                    });
-                },
-                closeButtonOff = function () {
-                    $('#imagelightbox-close').remove();
-                },
-                captionOn = function () {
-                    var description = $('a[href="' + $('#imagelightbox').attr('src') + '"]').find('h2').html();
-                    if (description.length > 0)
-                        $('<div id="imagelightbox-caption"><h3>' + description + '</h3></div>').appendTo('body');
-                },
-                captionOff = function () {
-                    $('#imagelightbox-caption').remove();
-                };
-
-
-            var instance = $this.find('.item a[data-lightbox^="gallery-"]').imageLightbox({
-                onStart: function () {
-                    overlayOn();
-                    closeButtonOn(instance);
-                },
-                onEnd: function () {
-                    overlayOff();
-                    captionOff();
-                    closeButtonOff();
-                    activityIndicatorOff();
-                },
-                onLoadStart: function () {
-                    captionOff();
-                    activityIndicatorOn();
-                },
-                onLoadEnd: function () {
-                    captionOn();
-                    activityIndicatorOff();
-                }
-            });
-
-        });
-
     }
 
     // Contact Form
 
-    $('#send-message').click(function(e){
+    $('#contact-form').submit(function(e){
       e.preventDefault();
 
-      var $btn = $(this),
-          $successEl = $('#contact-form').find('.message-success'),
-          $errorEl = $('#contact-form').find('.message-error'),
-          formData = $('#contact-form').serialize();
+      var $form = $(this),
+          $btn = $form.find('.submit'),
+          $successEl = $form.find('.message-success'),
+          $errorEl = $form.find('.message-error'),
+          formData = {
+            name: ($form.find('.name').val()).trim(),
+            email: ($form.find('.email').val()).trim(),
+            message: ($form.find('.message').val()).trim()
+          };
+
+      if(formData.name == "" || formData.email == "" || formData.message == ""){
+        alert("Please fill out all the required form fields!");
+        return false;
+      }
 
       $.ajax({
         url: "//formspree.io/contact@mdkholy.me",
@@ -1037,7 +938,6 @@ jQuery(document).ready(function ($) {
     /* Add some "last" classes */
 
     headerNav.find('.menu-item').last('li').addClass('last');
-    $('#top-footer').find('.column').last('.column').addClass('last');
     $('.blog.list-style').find('article').last('article').addClass('last');
     $('.search.list-style').find('article').last('article').addClass('last');
 

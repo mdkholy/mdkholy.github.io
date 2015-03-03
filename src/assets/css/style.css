@@ -1665,11 +1665,6 @@ section.greyish {
     width: 100%;
 }
 
-.contact-section input[type="submit"],
-.comment-form input[type="submit"] {
-    float: right;
-}
-
 /*----------------------------------------------------------------
     Service Boxes
 ----------------------------------------------------------------*/

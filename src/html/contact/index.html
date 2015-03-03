@@ -40,13 +40,18 @@
             <h3>Contact Form</h3>
             <p>You can use the form below to send me a message.</p>
             <form id="contact-form" method="post" action="">
+              <input type="hidden" name="_gotcha" value="_send" />
+
               <span class="pre-input"><i class="fa fa-user"></i></span>
-              <input class="name plain buffer" type="text" name="name" placeholder="Full name">
+              <input class="name plain buffer" type="text" name="name" placeholder="Full name" required />
+
               <span class="pre-input"><i class="fa fa-envelope"></i></span>
-              <input class="email plain buffer" type="email" name="email" placeholder="Email address">
-              <textarea class="plain buffer" name="message" placeholder="Don't forget that kindness is all!"></textarea>
-              <input type="text" name="_gotcha" style="display:none" />
-              <input id="send-message" class="plain button red" type="button" value="Send a Message">
+              <input class="email plain buffer" type="email" name="email" placeholder="Email address" required />
+
+              <textarea class="message plain buffer" name="message" placeholder="Don't forget that kindness is all!" required></textarea>
+
+              <input class="submit plain button red" type="submit" value="Send a Message">
+
               <a class="message-success button green transparent">Your message has been sent</a>
               <a class="message-error button green transparent">Unable to send your message, Please try again later.</a>
             </form>
