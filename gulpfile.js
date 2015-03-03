@@ -98,7 +98,9 @@ gulp.task('build-html', ['clean-html'], function(){
               basepath: '@file'
             }))
             //.pipe(prettify({indentSize: 2}))
-            .pipe(minifyHTML())
+            .pipe(minifyHTML({
+              empty: true
+            }))
             .pipe(gulp.dest(file.dest))
         ;
 
