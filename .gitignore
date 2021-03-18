@@ -1,0 +1,7 @@
+# IDE stuff
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Mac files
+.DS_Store
