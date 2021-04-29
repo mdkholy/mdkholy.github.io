@@ -1,0 +1,1 @@
+abbr[title] strong kbd samp small sub sup table input optgroup select textarea [type=reset] [type=submit] legend progress [type=search] blockquote dd dl figure h4 h5 h6 fieldset ol img input::-moz-placeholder textarea::-moz-placeholder input::placeholder textarea::placeholder audio canvas embed iframe video .sep.sep-1 .sep.sep-2 .sep.sep-3 .static

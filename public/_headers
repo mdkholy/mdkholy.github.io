@@ -1,0 +1,177 @@
+## Created with gatsby-plugin-postbuild
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-7c8a0f957949ac890a52.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-61b35ebfc18e23e5b40b.js
+  Cache-Control: public, max-age=31536000, immutable
+/commons-9ca1df276eb537477fe1.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-error-js-1631294ddfd225179494.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-project-js-027cac67bc1812b51608.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-home-js-93a0e1bf53226cc0dcd7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-skills-js-00352b84da988ed1f74f.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-portafolio-js-1e0b57db04c806504c01.js
+  Cache-Control: public, max-age=31536000, immutable
+/404.html
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-error-js-1631294ddfd225179494.js>; rel=preload; as=script
+  Link: </page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/404
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-error-js-1631294ddfd225179494.js>; rel=preload; as=script
+  Link: </page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-home-js-93a0e1bf53226cc0dcd7.js>; rel=preload; as=script
+  Link: </page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/portafolio/category/app
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-regular-c708fd4f02694c48059ff599eaab6a33.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-portafolio-js-1e0b57db04c806504c01.js>; rel=preload; as=script
+  Link: </page-data/portafolio/category/app/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/portafolio/category/corporate
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-regular-c708fd4f02694c48059ff599eaab6a33.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-portafolio-js-1e0b57db04c806504c01.js>; rel=preload; as=script
+  Link: </page-data/portafolio/category/corporate/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/portafolio
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-regular-c708fd4f02694c48059ff599eaab6a33.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-portafolio-js-1e0b57db04c806504c01.js>; rel=preload; as=script
+  Link: </page-data/portafolio/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/portafolio/sample-project-slug
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-project-js-027cac67bc1812b51608.js>; rel=preload; as=script
+  Link: </page-data/portafolio/sample-project-slug/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/portafolio/skill/html
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-regular-c708fd4f02694c48059ff599eaab6a33.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-portafolio-js-1e0b57db04c806504c01.js>; rel=preload; as=script
+  Link: </page-data/portafolio/skill/html/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/portafolio/skill/php
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-regular-c708fd4f02694c48059ff599eaab6a33.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-portafolio-js-1e0b57db04c806504c01.js>; rel=preload; as=script
+  Link: </page-data/portafolio/skill/php/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+/skills
+  Link: <https://www.google-analytics.com>; rel=preconnect
+  Link: <https://www.google-analytics.com>; rel=dns-prefetch
+  Link: </static/avatar-1d897a26b6f8b410c95349547439c7bd.png>; rel=preload; as=image
+  Link: </static/avatar-smile-7b611c795c8ff5848180781f104d718c.png>; rel=preload; as=image
+  Link: </static/ibm-plex-mono-v6-latin-500italic-2f3ff4c87e1d23f6a7be79e61607dbc7.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-serif-v9-latin-regular-36d1794d9b478119b1b23f3314b20fc5.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </static/ibm-plex-mono-v6-latin-italic-1c4b3c62369a45fdc78f4146f9b16417.woff2>; rel=preload; as=font; crossorigin=anonymous
+  Link: </webpack-runtime-7c8a0f957949ac890a52.js>; rel=preload; as=script
+  Link: </app-61b35ebfc18e23e5b40b.js>; rel=preload; as=script
+  Link: </commons-9ca1df276eb537477fe1.js>; rel=preload; as=script
+  Link: </component---src-templates-skills-js-00352b84da988ed1f74f.js>; rel=preload; as=script
+  Link: </page-data/skills/page-data.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/2880327889.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/sq/d/434202.json>; rel=preload; as=fetch; crossorigin=anonymous
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin=anonymous

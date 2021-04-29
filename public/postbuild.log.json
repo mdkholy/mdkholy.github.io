@@ -1,0 +1,200 @@
+[
+  {
+    "file": "404.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "404.html",
+    "tag": "update",
+    "size": [
+      21552,
+      23898
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "404/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "404/index.html",
+    "tag": "update",
+    "size": [
+      21547,
+      24310
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "index.html",
+    "tag": "update",
+    "size": [
+      21775,
+      24540
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "portafolio/category/app/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "portafolio/category/app/index.html",
+    "tag": "update",
+    "size": [
+      22825,
+      26038
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "portafolio/category/corporate/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "portafolio/category/corporate/index.html",
+    "tag": "update",
+    "size": [
+      22837,
+      26056
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "portafolio/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "portafolio/index.html",
+    "tag": "update",
+    "size": [
+      22837,
+      26027
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "portafolio/sample-project-slug/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "portafolio/sample-project-slug/index.html",
+    "tag": "update",
+    "size": [
+      21878,
+      24536
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "portafolio/skill/html/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "portafolio/skill/html/index.html",
+    "tag": "update",
+    "size": [
+      22821,
+      26032
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "portafolio/skill/php/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "portafolio/skill/php/index.html",
+    "tag": "update",
+    "size": [
+      22819,
+      26029
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "skills/index.html.rejected.txt",
+    "tag": "create",
+    "size": [
+      349
+    ],
+    "meta": {}
+  },
+  {
+    "file": "skills/index.html",
+    "tag": "update",
+    "size": [
+      121877,
+      124765
+    ],
+    "meta": {
+      "purgecss": "40"
+    }
+  },
+  {
+    "file": "_headers",
+    "tag": "create",
+    "size": [
+      14111
+    ],
+    "meta": {}
+  }
+]
